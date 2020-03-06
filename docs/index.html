@@ -8,6 +8,12 @@
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+
+<!-- jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- typing JS -->
+<script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js/t.min.js"></script>
 <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -21,6 +27,19 @@
         <ul class="uk-slideshow-items">
             <li>
                 <video src="img/movie.mov" uk-video="autoplay: inview"></video>
+                <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h2 class="uk-margin-remove" id="copy">いい育成は、きっと会社を強くする。</h2>
+                <script>
+                const el = $('#copy').t(
+                    {
+                        delay: 2,
+                        speed: 100,
+                        speed_vary: true,
+                    }
+                );
+                </script>
+
+                </div>
             </li>
         </ul>
 
@@ -84,7 +103,7 @@
     <div>
         <div class="uk-inline">
             <div class="uk-card uk-card-default uk-card-hover uk-card-body  uk-background-cover resource filtered" 
-            data-src="https://stock.adobe.com/Rest/Libraries/Watermarked/Download/310026518" uk-img>
+            data-src="https://stock.adobe.com/Rest/Libraries/Watermarked/Download/303249823" uk-img>
             </div>
             <div class="uk-position-center">
                 <h3 class="uk-card-title white">エンジニア育成事業部</h3>
@@ -100,7 +119,7 @@
     <div>
         <div class="uk-inline">
             <div class="uk-card uk-card-default uk-card-hover uk-card-body  uk-background-cover resource filtered" 
-            data-src="https://stock.adobe.com/Rest/Libraries/Watermarked/Download/281208940" uk-img>
+            data-src="https://stock.adobe.com/Rest/Libraries/Watermarked/Download/310026518" uk-img>
             </div>
             <div class="uk-position-center">
                 <h3 class="uk-card-title white">ビジネススキル研修事業部</h3>
