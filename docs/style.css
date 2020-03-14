@@ -1,80 +1,141 @@
 html body {
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 h2 {
     font-weight: 200;
 }
+
 .nav-wrapper {
-    background-color: rgba(255,255,255, 0.3) !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
 }
+
 .logoimg {
-    width:250px;
+    width: 250px;
 }
+
 .section1,
-.section2{
+.section2 {}
+
+.section1 {
+    position: relative;
+
+    /*レイアウト用のCSS*/
+    background-color: rgb(51, 162, 194);
 }
-.section1{
-  position: relative;
-  height: 400px;
- 
-  /*レイアウト用のCSS*/
-  background-color: rgb(51, 162, 194);
-}
-.section2{
+
+.section2 {
     padding-top: 20px;
 }
+
 .section2 h2 {
     font-size: 60px;
     font-weight: 200;
 }
-.section1::before{
-  content:"";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
- 
-  /*ここで三角形のサイズを決める。
+
+.section1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+    /*ここで三角形のサイズを決める。
   必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
-  border-width: 0 0 150px 100vw ;
- 
-  border-color: transparent transparent #fff transparent;
+    border-width: 0 0 150px 100vw;
+
+    border-color: transparent transparent #fff transparent;
 }
 
 section {
     min-height: 50px;
 }
-section.business {
-    background-color:rgb(222,63,63);
-}
-.business p{
-    color: white;
 
+.business {
+    background-color: rgb(222, 63, 63);
 }
+
+.business.header {
+    padding: 10px;
+}
+
+.business section {
+    background-color: white;
+}
+
+.business p {}
+
 .unknown {
-    background-color:rgb(229,211,25);
+    background-color: rgb(229, 211, 25);
 }
-.footer, .contact, .unknown {
+
+.footer,
+.contact,
+.unknown {
     min-height: 400px;
 }
-.resource, .support {
-    height: 200px;
-    width: 442px;
+
+.engineer {
+    background-image: url('https://stock.adobe.com/Rest/Libraries/Watermarked/Download/303249823');
+    background-size: cover;
 }
-.filtered {
-    filter: brightness(0.7);
-  }
-.white {
-    color: white !important;
+
+.engineer:hover {
+    background-image: url('img/engineer2.png');
+    background-size: cover;
 }
-.contact {
+
+.resource {
     background-image: url('https://stock.adobe.com/Rest/Libraries/Watermarked/Download/310026518');
     background-size: cover;
 }
+
+.resource:hover {
+    background-image: url('img/resuorce2.png');
+    background-size: cover;
+}
+
+.support {
+    background-image: url('https://stock.adobe.com/Rest/Libraries/Watermarked/Download/281208940');
+    background-size: cover;
+}
+
+.support:hover {
+    background-image: url('img/support2.png');
+    background-size: cover;
+}
+
+.resource,
+.engineer,
+.support {
+    cursor: pointer;
+    height: 200px;
+    width: 100%;
+}
+
 .backdrop {
     height: 100%;
     width: 100%;
-    backdrop-filter: grayscale(100%) blur(3px) brightness(0.6);
+    backdrop-filter: brightness(0.6);
+}
+
+.filtered {
+    filter: brightness(0.7);
+}
+
+.white {
+    color: white !important;
+}
+
+.contact {
+    background-image: url('https://stock.adobe.com/Rest/Libraries/Watermarked/Download/272948946');
+    background-size: cover;
+}
+
+.contact .backdrop {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: grayscale(100%) blur(2px) brightness(0.6);
 }
