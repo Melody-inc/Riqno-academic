@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+
+    <!-- jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- typing JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js/t.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <img class="logoimg" src="https://riqno.co.jp/wp-content/uploads/2017/08/topriqnologo001.png">
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a class="" href="$">会社概要</a></li>
+                <li>
+                    <a class="" href="#">事業内容</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="./engineer_skills.html">エンジニア育成</a></li>
+                            <li><a href="./business_skills.html">ビジネススキル研修</a></li>
+                            <li><a href="#">採用支援</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="" href="#">就活生へ</a></li>
+                <li><a class="" href="#">コラム</a></li>
+                <li><a class="" href="#contact" uk-scroll>お問い合わせ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="">
+        <div>
+            <div class="section1">
+                <div class="uk-container uk-container-large">
+                    <div uk-slideshow="animation: push;">
+
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                            <ul class="uk-slideshow-items">
+                                <li>
+                                    <img src="img/business_skills.png" uk-cover />
+                                    <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                                        <h1 class="uk-margin-remove" id="title">BUSINESS SKILLS</h1>
+                                        <h2 class="uk-margin-remove" id="copy">やらない理由を探し出すと、成長が止まり出す。</h2>
+                                        <script>
+                                            const el = $('#copy').t({
+                                                delay: 2,
+                                                speed: 100,
+                                                speed_vary: true,
+                                            });
+                                        </script>
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-next uk-slideshow-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-text-center uk-margin-top">
+        <div class="header">
+            <h2 class="uk-margin">ビジネススキル研修事業</h2>
+        </div>
+    </div>
+    <section class="uk-padding-large uk-container uk-container-small">
+        <h3 class="uk-text-center uk-text-light">
+            新人育成コース
+        </h3>
+        <ul class='office-skill' uk-accordion="multiple: true">
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    Office-No.1
+                    <i class="skill-message uk-text-light">
+                        即戦力を目指すExcel基礎/応用研修
+                    </i>
+                </a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    Office-No.2
+                    <i class="skill-message uk-text-light">
+                        内定者向け事前Excel研修
+                    </i>
+                </a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="uk-padding-large uk-container uk-container-small">
+        <h3 class="uk-text-center uk-text-light">
+            リーダー育成コース
+        </h3>
+        <ul class='engineer-skill' uk-accordion="multiple: true">
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    Engineer-No.1
+                    <i class="skill-message uk-text-light">
+                        Windows Server 2012の構成
+                    </i>
+                </a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="uk-padding-large uk-container uk-container-small">
+        <h3 class="uk-text-center uk-text-light">
+            営業スキル育成コース
+        </h3>
+        <ul class='web-skill' uk-accordion="multiple: true">
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    WEB/DTP-No.1
+                    <i class="skill-message uk-text-light">
+                        Windows Server 2012の構成
+                    </i>
+                </a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="footer">
+        <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s" uk-grid>
+            <div class="contact" id="contact">
+                <div class="backdrop">
+                    <div class="uk-padding">
+                        <h2 class="uk-margin-top white">CONTACT US</h2>
+                        <form class="uk-form-horizontal uk-text-left">
+                            <div class="uk-margin-xsmall">
+                                <label class="uk-form-label white" for="form-stacked-text">お名前</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-small" id="form-stacked-text" type="text"
+                                        placeholder="Some text...">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label white" for="form-stacked-text">メールアドレス</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-small" id="form-stacked-text" type="text"
+                                        placeholder="Some text...">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label white" for="form-stacked-text">題名</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-small" id="form-stacked-text" type="text"
+                                        placeholder="Some text...">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label white" for="form-stacked-text">メッセージ本文</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                </div>
+                            </div>
+                            <button class="uk-button uk-button-primary uk-width-1-1 ">送信</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="unknown">
+                <div>
+                    <div class="uk-padding">
+                        <h2 class="uk-margin-top white">COLUMN</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
