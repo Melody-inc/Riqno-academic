@@ -20,7 +20,6 @@ h2 {
 .section1 {
     position: relative;
 
-    /*レイアウト用のCSS*/
     background-color: rgb(51, 162, 194);
 }
 
@@ -138,4 +137,31 @@ section {
     height: 100%;
     width: 100%;
     backdrop-filter: grayscale(100%) blur(2px) brightness(0.6);
+}
+
+
+/* skills */
+.skill-title {
+    background-color: rgb(51, 162, 194);
+}
+
+.skill-message {}
+
+.uk-accordion-title {
+    padding: 10px;
+}
+
+.office-skill .uk-accordion-title {
+    color: white;
+    background-color: rgb(222, 63, 63, 0.8);
+}
+
+.engineer-skill .uk-accordion-title {
+    color: white;
+    background-color: rgba(103, 194, 51, 0.8)
+}
+
+.web-skill .uk-accordion-title {
+    color: white;
+    background-color: rgb(202, 191, 71)
 }
