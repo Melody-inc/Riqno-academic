@@ -165,3 +165,8 @@ section {
     color: white;
     background-color: rgb(202, 191, 71)
 }
+
+.recruiting_supports .uk-accordion-title {
+    color: white;
+    background-color: rgb(51, 162, 194);
+}

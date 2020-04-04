@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js/t.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex">
 
 </head>
 
@@ -41,120 +42,76 @@
                     </div>
                 </li>
                 <li><a class="" href="https://riqno.co.jp/lp/">就活生へ</a></li>
-                <li><a class="" href="./column.html">コラム</a></li>
+                <li><a class="" href="./column.thml">コラム</a></li>
                 <li><a class="" href="#contact" uk-scroll>お問い合わせ</a></li>
             </ul>
         </div>
     </nav>
-    <div class="">
-        <div>
-            <div class="section1">
-                <div class="uk-container uk-container-large">
-                    <div uk-slideshow="animation: push;">
+    <section class="uk-container">
+        <div uk-grid>
+            <div class="uk-width-expand@m uk-margin-top">
+                <div class="uk-child-width-1-2@m uk-margin" uk-grid>
 
-                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                            <ul class="uk-slideshow-items">
-                                <li>
-                                    <img src="img/business_skills.png" uk-cover />
-                                    <div class="uk-position-center uk-position-small uk-text-center uk-light">
-                                        <h1 class="uk-margin-remove" id="title">BUSINESS SKILLS</h1>
-                                        <h2 class="uk-margin-remove" id="copy">やらない理由を探し出すと、成長が止まり出す。</h2>
-                                        <script>
-                                            const el = $('#copy').t({
-                                                delay: 2,
-                                                speed: 100,
-                                                speed_vary: true,
-                                            });
-                                        </script>
-
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
-                                uk-slidenav-previous uk-slideshow-item="previous"></a>
-                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
-                                uk-slidenav-next uk-slideshow-item="next"></a>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="img/engineer_skills.png" height="200" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">April 01,
+                                    2016</time></p>
+                            <h3 class="uk-card-title uk-margin-remove">「ユニクロ」生みの親、柳井正氏から学ぶ優秀なビジネスマンとは</h3>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="img/engineer_skills.png" height="200" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">April 01,
+                                    2016</time></p>
+                            <h3 class="uk-card-title uk-margin-remove">「ユニクロ」生みの親、柳井正氏から学ぶ優秀なビジネスマンとは</h3>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="uk-width-1-4@m uk-margin">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <ul class="uk-nav uk-nav-default">
+                        <li class="uk-nav-header">カテゴリー</li>
+                        <li><a href="#">新人教育について</a></li>
+                        <li><a href="#">エンジニア育成について</a></li>
+                        <li><a href="#">採用支援について</a></li>
+                        <li><a href="#">就活支援について(学生向け)</a></li>
+                    </ul>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body uk-margin-large-top">
+                    <ul class="uk-nav uk-nav-default">
+                        <li class="uk-nav-header">最近の投稿</li>
+                        <li><a href="#">ユニクロの...</a></li>
+                        <li><a href="#">エンジニア.....</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="">
+        <div class="section1" style="height:500px; overflow: hidden">
+            <img src="img/business_skills.png" uk-cover />
+            <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <a class="uk-button uk-button-default uk-button-large" href="https://riqno.co.jp/lp/">募集要項 /
+                    エントリーはこちら</a>
+                <script>
+                    const el = $('#copy').t({
+                        delay: 2,
+                        speed: 100,
+                        speed_vary: true,
+                    });
+                </script>
+
+            </div>
         </div>
     </div>
-    <div class="uk-text-center uk-margin-top">
-        <div class="header">
-            <h2 class="uk-margin">ビジネススキル研修事業</h2>
-        </div>
-    </div>
-    <section class="uk-padding-large uk-container uk-container-small">
-        <h3 class="uk-text-center uk-text-light">
-            新人育成コース
-        </h3>
-        <ul class='office-skill' uk-accordion="multiple: true">
-            <li>
-                <a class="uk-accordion-title" href="#">
-                    Office-No.1
-                    <i class="skill-message uk-text-light">
-                        即戦力を目指すExcel基礎/応用研修
-                    </i>
-                </a>
-                <div class="uk-accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-            </li>
-            <li>
-                <a class="uk-accordion-title" href="#">
-                    Office-No.2
-                    <i class="skill-message uk-text-light">
-                        内定者向け事前Excel研修
-                    </i>
-                </a>
-                <div class="uk-accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="uk-padding-large uk-container uk-container-small">
-        <h3 class="uk-text-center uk-text-light">
-            リーダー育成コース
-        </h3>
-        <ul class='engineer-skill' uk-accordion="multiple: true">
-            <li>
-                <a class="uk-accordion-title" href="#">
-                    Engineer-No.1
-                    <i class="skill-message uk-text-light">
-                        Windows Server 2012の構成
-                    </i>
-                </a>
-                <div class="uk-accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="uk-padding-large uk-container uk-container-small">
-        <h3 class="uk-text-center uk-text-light">
-            営業スキル育成コース
-        </h3>
-        <ul class='web-skill' uk-accordion="multiple: true">
-            <li>
-                <a class="uk-accordion-title" href="#">
-                    WEB/DTP-No.1
-                    <i class="skill-message uk-text-light">
-                        Windows Server 2012の構成
-                    </i>
-                </a>
-                <div class="uk-accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
     <section class="footer">
         <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s" uk-grid>
             <div class="contact" id="contact">
