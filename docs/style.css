@@ -163,10 +163,20 @@ section {
 
 .web-skill .uk-accordion-title {
     color: white;
-    background-color: rgb(202, 191, 71)
+    background-color: rgb(219, 202, 11)
+}
+
+.app-skill .uk-accordion-title {
+    color: white;
+    background-color: rgb(121, 71, 202)
 }
 
 .recruiting_supports .uk-accordion-title {
     color: white;
     background-color: rgb(51, 162, 194);
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
 }
